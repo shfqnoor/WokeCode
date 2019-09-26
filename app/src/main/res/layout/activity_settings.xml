@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="82dp"
+        android:text="Done" />
+
+    <Spinner
+        android:id="@+id/numQuestionSpinner"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="142dp" />
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/numQuestionSpinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:text="Number of Questions"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/questionTitle"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:text="            Question settings"
+        android:textSize="24sp" />
+
+    <CheckBox
+        android:id="@+id/diff2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="223dp"
+        android:text="Normal" />
+
+    <CheckBox
+        android:id="@+id/diff1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/label1"
+        android:layout_alignTop="@+id/diff2"
+        android:text="Easy" />
+
+    <CheckBox
+        android:id="@+id/diff3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/diff2"
+        android:layout_marginEnd="52dp"
+        android:text="Hard" />
+</RelativeLayout>
